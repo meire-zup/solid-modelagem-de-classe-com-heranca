@@ -60,11 +60,11 @@ public abstract class Funcionario implements Despesa {
         return salario;
     }
 
-    public Double aumentaSalario(Double salario){
+    public void aumentaSalario(double salario){
 
-        double aumentoSalario = this.salario * 1.10;
+        salario = this.salario * 1.10;
 
-        return aumentoSalario;
+        System.out.println("Novo salário: " + salario);
 
     }
 }

@@ -23,11 +23,11 @@ public class Coordenador extends Funcionario {
     }
 
     @Override
-    public Double aumentaSalario(Double salario){
+    public void aumentaSalario(double salario){
 
-        double aumentoSalario = salario * 1.05;
+        salario = salario * 1.05;
+        System.out.println("Novo salário: " + salario);
 
-        return aumentoSalario;
     }
 
     public void adicionaProfessor(Professor professor){

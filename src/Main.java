@@ -20,7 +20,7 @@ public class Main {
         Estagiario estagiario2 = new Estagiario("Fernando Ferreira", "000.000.000-02", 1200.00);
         Estagiario estagiario3 = new Estagiario("Mario Ferreira", "000.000.000-02", 1200.00);
 
-        System.out.println(professor1.aumentaSalario(professor1.getSalario()));
+        professor1.aumentaSalario(professor1.getSalario());
         Double salario = professor1.getSalario();
 
         System.out.println(salario);
@@ -28,7 +28,7 @@ public class Main {
         System.out.println(professor1.getSalario());
 
 
-        System.out.println(coordenador1.aumentaSalario(coordenador1.getSalario()));
+        coordenador1.aumentaSalario(coordenador1.getSalario());
 
         coordenador1.adicionaProfessor(professor1);
         coordenador1.adicionaProfessor(professor2);
