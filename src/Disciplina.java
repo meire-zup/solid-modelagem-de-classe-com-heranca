@@ -3,11 +3,14 @@ public class Disciplina {
     private Professor professor;
 
     public String getNome() {
+
         return nome;
     }
 
     public Disciplina(String nome){
+
         this.nome = nome;
+
     }
     public Disciplina(String nome, Professor professor) {
         super();
@@ -15,14 +18,17 @@ public class Disciplina {
     }
 
     public Professor getProfessor() {
+
         return professor;
     }
 
     public void setNome(String nome) {
+
         this.nome = nome;
     }
 
     public void setProfessor(Professor professor) {
+
         this.professor = professor;
     }
 }

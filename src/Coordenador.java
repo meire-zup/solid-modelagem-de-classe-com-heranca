@@ -6,27 +6,35 @@ public class Coordenador extends Funcionario {
     private List<Professor> professoresSupervisionados = new ArrayList<>();
 
     public Coordenador(String nome, String cpf, Long numeroDeRegistro, String orgaoDeLotacao, Double salario){
+
         super(nome, cpf, numeroDeRegistro, orgaoDeLotacao, salario);
+
     }
 
-    public Coordenador(String nome, String cpf, Long numeroDeRegistro, String orgaoDeLotacao, Double salario, List<Professor> professoresSupervisionados) {
+    public Coordenador(String nome, String cpf, Long numeroDeRegistro, String orgaoDeLotacao
+            , Double salario, List<Professor> professoresSupervisionados) {
+
         super(nome, cpf, numeroDeRegistro, orgaoDeLotacao, salario);
         this.professoresSupervisionados = professoresSupervisionados;
+
     }
 
     public List<Professor> getProfessoresSupervisionados() {
+
         return professoresSupervisionados;
     }
 
     public void setProfessoresSupervisionados(List<Professor> professoresSupervisionados) {
+
         this.professoresSupervisionados = professoresSupervisionados;
+
     }
 
     @Override
-    public void aumentaSalario(double salario){
+    public void aumentaSalario(Double salario){
 
         salario = salario * 1.05;
-        System.out.println("Novo salário: " + salario);
+        System.out.println("R$ " + salario);
 
     }
 
